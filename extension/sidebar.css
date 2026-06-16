@@ -1,0 +1,38 @@
+#yt-ai-sidebar {
+    position: fixed;
+    right: 0;
+    top: 80px;
+
+    width: 380px;
+    height: 600px;
+
+    background: white;
+
+    border-left: 1px solid #ddd;
+
+    z-index: 999999;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    box-shadow: -2px 0 10px rgba(0,0,0,.1);
+}
+
+#yt-question {
+    width: 100%;
+    padding: 10px;
+}
+
+#yt-ask-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+#yt-answer {
+    margin-top: 15px;
+    white-space: pre-wrap;
+}
