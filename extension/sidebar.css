@@ -2,37 +2,70 @@
     position: fixed;
     right: 0;
     top: 80px;
-
     width: 380px;
     height: 600px;
-
-    background: white;
-
-    border-left: 1px solid #ddd;
-
+    background: #ffffff;
+    border-left: 1px solid #e5e7eb;
     z-index: 999999;
-
-    padding: 15px;
-
+    padding: 20px;
     overflow-y: auto;
-
-    box-shadow: -2px 0 10px rgba(0,0,0,.1);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 12px 0 0 12px; /* Smooth rounded corners on the left */
 }
 
 #yt-question {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: vertical; /* Allows resizing if it's a textarea */
+    box-sizing: border-box;
+}
+
+#yt-question:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 #yt-ask-btn {
     width: 100%;
     margin-top: 10px;
-    padding: 10px;
-
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#yt-ask-btn:hover {
+    background-color: #1d4ed8;
+}
+
+#yt-ask-btn:active {
+    transform: scale(0.98);
 }
 
 #yt-answer {
-    margin-top: 15px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f9fafb;
+    border: 1px solid #f3f4f6;
+    border-radius: 8px;
     white-space: pre-wrap;
+    font-size: 14px;
+    color: #1f2937;
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes content nicely if using flex layout */
+    overflow-y: auto;
 }
